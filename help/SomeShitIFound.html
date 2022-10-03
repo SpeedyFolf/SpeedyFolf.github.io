@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework #2: HTML, CSS, Semantic and Responsive Page Layout, Domain Names, and Web Hosting</title>
+    <meta name="description" content="Homework #1: HTML and Client-Server Technology">
+    <meta name="keywords" content="technology, HTML, CSS, server, client">
+    <meta name="author" content="Joe Cline">
+    <link rel="stylesheet" type="text/css" href="hw2style.css"> 
+</head>
+<body> 
+    <header>
+        <h1 id="CIS">CIS 122 Projects</h1>
+    </header>
+
+    <!--
+    metatags-noindex robots.txt
+    -->
+
+    <nav id="nav" style="background:black;">
+        <div class="navbase">
+            <a href="https://cislinux.hfcc.edu/~jdcline/cis122/homework-1/HTML-1.html">Client Server</a>
+        </div>
+        <div class="navbase1">
+            <a href="https://cislinux.hfcc.edu/~jdcline/cis122/homework-2/hw2html.html">Hosting Domain</a>
+        </div>
+    </nav>
+
+    <section>
+        <h2 id="DN">Domain Names and Web Hosting</h2>
+        <h3 id="WDN"></h3>
+        <table align="center" border="3">
+            <tr>
+                <th><a href="https://www.godaddy.com/" id="GD">GoDaddy</a></th>
+                <th><a href="https://www.hostgator.com/" id="HG">HostGator</a></th>
+                <th><a href="https://www.namecheap.com/" id="NC">NameCheap</a></th>
+            </tr>
+            <tr>
+                <td id="GDtd">GoDaddy is a domain registrar and web hosting service, known for their cheap domain names and their web hosting service that they offer.</td>
+                <td id="HGtd">HostGator is a web hosting service and provider of shared, reseller, VPS. They include all of the following: Cloud Hosting/WordPress Hosting/VPS Hosting/Dedicated Hosting.</td>
+                <td id="NCtd">NameCheap is an ICANN-accredited registrar, they provide domain name registration and web hosting.</td>
+            </tr>
+        </table>
+        <p id="price">If your interested in buying a .com web domain from GoDaddy, the prices are the following: For 5 years it would cost you $62.95, the price is $2.99 for the first year and $14.99 for every year after that.</p>
+        <p id="musicsale">The domain name musicsales.com was bought using the service: Network Solutions, LLC. The domain name expires on 2021-08-24 </p>
+        <p id="musicsaleinfo">If you want to buy the domain name musicsales.info it could cost you around $4.88, some websites like GoDaddy/NameCheap charges cheaper but they force you to get a plan </p>
+
+        <table align="center" border="3" id="TLD">
+            <caption class="title" id="title1"> <b>Newer TLDs of 2018</b>
+            <tr>
+                <td>.basketball</td>
+                <td>.book</td>
+                <td>.luxe</td>
+            </tr>
+            <tr>
+                <td>.fan</td>
+                <td>.arab</td>
+                <td>.broker</td>
+            </tr>
+            <tr>
+                <td>.hotel</td>
+                <td>.phd</td>
+                <td>.scholarships</td>
+            </tr>
+        </table>
+        <p id="bluehost">Webhosting at Bluehost.com will cost around $2.95/month*, this could vary though. The orginal starting price was $7.99, this changed to $3.95 and then changed again to it's final price of $2.95/month* </p>
+
+        <ol id="list-1"> 
+            <li><p id="list1">Test </p></li>
+            <li><p id="list2">Test </p></li>
+            <li><p id="list3">Test </p></li>
+        </ol>
+        <ul id="list-2">
+            <li><p id="list4">Test </p></li>
+            <li><p id="list5">Test </p></li>
+            <li><p id="list6">Test </p></li>
+        </ul>
+        <ol id="list-3">
+            <li><p id="list7">Test </p></li>
+            <li><p id="list8">Test </p></li>
+            <li><p id="list9">Test </p></li>
+        </ol>
+        <ol id="list-4">
+            <li><p id="list10">Test </p></li>
+            <li><p id="list11">Test </p></li>
+            <li><p id="list12">Test </p></li>
+        </ol> 
+
+    </section>
+
+   <aside>
+  <ul>
+    <li><a href="#">Profiles</a>
+      <ul>
+        <li><a href="https://www.sololearn.com/Profile/2260402#_=_">Sololearn</a></li>
+        <li><a href="https://github.com/JosephCline">GitHub</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+
+    <footer>
+        <sub id="sub">CIS 122 Web Internet Technologies </sub>
+        <br />
+        <sub id="sub3">Copyright &copy; 2018 Joe Cline </sub>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    margin: 0;
+    color: #000;
+    background: Ivory;
+    font-family:Andale Mono, monospace;
+}
+#CIS {
+    margin:0;
+    font-weight:500;
+    border:darkred solid;
+    border-radius: 25px;
+    font-family:Andale Mono, monospace;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+footer {
+    clear: both;
+    padding: 16px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family:"Arial Black", Gadget, 
+}
+@media only screen 
+and (min-device-width: 480px)
+and (min-width: 700px)
+{
+    section {
+        float: left;
+        width: 70%;
+    }
+    nav {
+        float: left;
+        width: 15%;
+    }
+    }
+
+
+.navbase1 {
+    overflow: hidden;
+    background-color: grey;
+}
+.navbase1 a  {
+    float: left;
+    display:block;
+    color: black;
+    text-align:center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbase1 a:hover {
+    background-color: darkred;
+    color:Ivory;
+}    
+
+.navbase {
+    overflow: hidden;
+    background-color: grey;
+}
+.navbase a {
+    float: left;
+    display:block;
+    color: black;
+    text-align:center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbase a:hover {
+    background-color: darkred;
+    color:Ivory;
+}
+
+#sub {
+    color:Ivory;
+    font-size:12px;
+    font-family:"Arial Black", Gadget, sans-serif;
+}
+#sub3 {
+    color:Ivory;
+    font-weight:900;
+    font-size:12px;
+    font-family:"Arial Black", Gadget, sans-serif;
+}
+#DN {
+    text-align:center;
+}
+#PDN {
+    text-align:center;
+}
+tr, td, th { 
+    padding: 20px; 
+    border: solid 5px black;
+    text-align: center;
+    background:Ivory;
+    font-family:Andale Mono, monospace;
+}
+table {
+    border:none;
+}
+#GD {
+    color:darkred;
+    text-decoration: none;
+    font-size:20px;
+}
+#HG {
+    color:darkred;
+    text-decoration: none;
+    font-size:20px;
+}
+#NC {
+    color:darkred;
+    text-decoration: none;
+    font-size:20px;
+}
+#price {
+    border-radius: 25px;
+    border: 4px solid black;
+    padding: 20px; 
+}
+#TLD {
+    padding: 20px; 
+    text-align: center;
+    background:Ivory;
+    font-family:Andale Mono, monospace;
+}
+h3 {
+    text-align:center;
+}
+#musicsale {
+    border-radius: 25px;
+    border: 4px solid black;
+    padding: 20px;
+}
+#musicsaleinfo {
+    border-radius: 25px;
+    border: 4px solid black;
+    padding: 20px;
+}
+#bluehost {
+    border-radius: 25px;
+    border: 4px solid black;
+    padding: 20px;
+}
+#list-1 {
+    width:320px;
+    font-style:italic;
+    font-family:Georgia, Times, serif;
+    font-size:24px; 
+    color:darkred;
+    display:block;
+}
+#list-2 {
+    width:320px;
+    font-style:italic;
+    font-family:Georgia, Times, serif;
+    font-size:24px;
+    color:darkred;
+    display:block;
+}
+#list-3 {
+    width:320px;
+    font-style:italic;
+    font-family:Georgia, Times, serif;
+    font-size:24px; 
+    color:darkred;
+    display:block;
+}
+#list-4 {
+    width:320px;
+    font-style:italic;
+    font-family:Georgia, Times, serif;
+    font-size:24px; 
+    color:darkred;  
+    display:block;
+}
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: decimal;
+}
+#list1{
+    font-size:15px;
+    border-left: 1px solid darkred;
+    display:block;
+    padding:8px;
+}
+#list2{
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list3{
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list4 {
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list5 { 
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list6 {
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list7 { 
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list8 {
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list9 {
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list10 {
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list11 {
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+#list12 {
+    font-size:15px;
+    display:block;
+    padding:8px;
+    border-left: 1px solid darkred;
+}
+
+aside ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    float:right;
+}
+aside ul li {
+    display:inline-block;
+    background-color: grey;    
+}
+aside a {
+    display:block;
+    padding:0 80;
+    color:Black;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+aside a:hover {
+    background-color:darkred;
+    color:Ivory;
+}
+aside ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+aside ul li:hover > ul {
+    display:inherit;
+}
+aside ul ul li {
+    min-width:170px;
+    display:list-item;
+    position: relative;
+}
+aside {
+  float: left;
+  width:15%;
+}
+#title1 {
+    height:1px;
+}
+#GDtd {
+    color:darkred;
+    font-size:16px;
+    font-weight:bold;
+}
+#HGtd {
+    color:darkred;
+    font-weight:bold;
+    font-size:16px;
+}
+#NCtd {
+    color:darkred;
+    font-weight:bold;
+    font-size:16px;
+}
+#WDN {
+    height:2px;
+    font-size:20px;
+}
+</style>

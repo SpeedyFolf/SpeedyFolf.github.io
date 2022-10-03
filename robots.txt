@@ -1,0 +1,21 @@
+# Beep boop, hello to all the robots trying to desperately crawl my site.
+# If you keep running vulnerability finders on my site, I will eat you.
+# Why the fuck do you keep crawling my site? Leave me the fuck alone.
+# Created in the distant future (the year 2000) after the robotic uprising of the mid '90s which wiped out all humans. Kappa
+
+User-agent: *
+Allow: /*
+Disallow: /api/*
+
+User-agent: Go-http-client
+Disallow: /*
+
+User-agent: BLEXBot
+Crawl-delay: 10
+Disallow: /
+
+User-Agent: MJ12bot
+Disallow: /
+
+User-agent: Mediapartners-Google 
+Disallow:
