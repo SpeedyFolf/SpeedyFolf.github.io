@@ -1,22 +1,318 @@
-<!-- The doctype should define the page as an HTML5 document -->
 <!DOCTYPE html>
-<html>
-	<head>
-		<!-- A meta tag should define the character set to be UTF-8 -->
-		<meta charset="UTF-8">
-		<!-- A viewport meta tag should make the web site work on all devices and screen resolutions -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- W3.CSS should take care of all our styling needs and all device and browser differences -->
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-		<!-- Load external CSS styles -->
-		<link rel="stylesheet" href="styles.css">
-		<title>Blank template</title>
-	</head>
-	<body>
-		<!-- Content will go here -->
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-		<!-- Load external JavaScript -->
-		<script src="scripts.js"></script>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social Links</title>
+    <link rel="stylesheet" href="fontawesome-free-7.1.0-web\css\all.min.css">
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1D1D1D; /* Requested Background */
+            color: #44BBEE; /* Requested Text Color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Profile Section */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 12%;
+            border: 3px solid #44BBEE;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            opacity: 0.8;
+        }
+
+        /* Links Container */
+        .links-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Individual Buttons */
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #1D1D1D;
+            background-color: #44BBEE;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            position: relative;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        /* Icons */
+        .link-btn i {
+            font-size: 1.5rem;
+            position: absolute;
+            left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/SpeedyFolf.png" alt="Profile Picture">
+        <h1>@SpeedyFolf</h1>
+    </header>
+    <div class="links-container">
+        <a href="https://github.com/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
+        <a href="https://gitlab.com/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-gitlab"></i>
+            GitLab
+        </a>
+        <a href="https://codeberg.org/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-codeberg"></i>
+            Codeberg
+        </a>
+        <a href="https://x.com/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+            X (Twitter)
+        </a>
+        <a href="https://bsky.app/profile/speedyfolf.bsky.social" class="link-btn" target="_blank">
+            <i class="fab fa-bluesky"></i>
+            Bluesky
+        </a>
+        <a href="https://mastodon.social/@SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-mastodon"></i>
+            Mastodon
+        </a>
+        <a href="https://www.reddit.com/user/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-reddit"></i>
+            Reddit
+        </a>
+        <a href="https://www.patreon.com/c/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-patreon"></i>
+            Patreon
+        </a>
+        <a href="https://www.tiktok.com/@speedyfolf" class="link-btn" target="_blank">
+            <i class="fab fa-tiktok"></i>
+            TikTok
+        </a>
+        <a href="https://open.spotify.com/user/t8o2qqzrjozhpx6umhdu2144l" class="link-btn" target="_blank">
+            <i class="fab fa-spotify"></i>
+            Spotify
+        </a>
+        <a href="https://steamcommunity.com/id/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-steam"></i>
+            Steam
+        </a>
+        <a href="https://www.youtube.com/@SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-youtube"></i>
+            YouTube
+        </a>
+        <a href="https://www.twitch.tv/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-twitch"></i>
+            Twitch
+        </a>
+        <a href="https://kick.com/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-kick"></i>
+            Kick
+        </a>
+        <a href="https://mixer.com/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-mixer"></i>
+            Mixer
+        </a>
+        <a href="https://www.smashcast.tv/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-smashcast"></i>
+            Smashcast
+        </a>
+        <a href="https://joystick.tv/u/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-joystick"></i>
+            Joystick.tv
+        </a>
+        <a href="https://fluxer.gg/SX0tNM00" class="link-btn" target="_blank">
+            <i class="fab fa-fluxer"></i>
+            Fluxer server
+        </a>
+        <a href="https://stt.gg/FJ1TwTrx" class="link-btn" target="_blank">
+            <i class="fab fa-stoat"></i>
+            Stoat (Revolt) server
+        </a>
+        <a href="https://discord.com/users/196785053802430475" class="link-btn" target="_blank" onclick="alert('SpeedyFolf#1172')">
+            <i class="fab fa-discord"></i>
+            Discord profile
+        </a>
+        <a href="https://discord.gg/ehMXEtBUk3" class="link-btn" target="_blank">
+            <i class="fab fa-discord"></i>
+            Discord server
+        </a>
+        <a href="https://guilded.gg/u/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-guilded"></i>
+            Guilded profile
+        </a>
+        <a href="https://guilded.gg/Folf" class="link-btn" target="_blank">
+            <i class="fab fa-guilded"></i>
+            Guilded server
+        </a>
+        <a href="https://www.roblox.com/users/939334445/profile" class="link-btn" target="_blank">
+            <i class="fab fa-roblox"></i>
+            Roblox
+        </a>
+        <a href="https://barq.app/p/Wh0ApvU" class="link-btn" target="_blank">
+            <i class="fab fa-barq"></i>
+            BARQ! (mobile)
+        </a>
+        <a href="https://web.barq.app/profiles/9163a9dd-ef4e-46d4-bab5-c7c31e84df70" class="link-btn" target="_blank">
+            <i class="fab fa-barq"></i>
+            BARQ! (web)
+        </a>
+        <a href="https://t.me/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-telegram"></i>
+            Telegram
+        </a>
+        <a href="https://www.furaffinity.net/user/speedyfolf" class="link-btn" target="_blank">
+            <i class="fab fa-furaffinity"></i>
+            FurAffinity
+        </a>
+        <a href="https://www.last.fm/user/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-lastfm"></i>
+            Last.fm
+        </a>
+        <a href="https://www.duolingo.com/profile/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-duolingo"></i>
+            Duolingo
+        </a>
+        <a href="https://www.speedrun.com/users/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-speedrun"></i>
+            Speedrun.com
+        </a>
+        <a href="https://www.speedrunslive.com/profile/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-speedrunslive"></i>
+            SpeedRunsLive.com
+        </a>
+        <a href="https://racetime.gg/user/rVwLN8B88vBPa52R" class="link-btn" target="_blank">
+            <i class="fab fa-racetime"></i>
+            RaceTime.gg
+        </a>
+        <a href="https://splits.io/users/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-splits"></i>
+            Splits.io
+        </a>
+        <a href="https://therun.gg/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-therun"></i>
+            TheRun.gg
+        </a>
+        <a href="https://speedruns.me/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-speedruns"></i>
+            Speedruns.me
+        </a>
+        <a href="https://pronouns.cc/@SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-pronouns"></i>
+            pronouns.cc
+        </a>
+        <a href="https://en.pronouns.page/@SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-pronouns"></i>
+            Pronouns.page
+        </a>
+        <a href="https://cake.avris.it/cB4" class="link-btn" target="_blank">
+            <i class="fab fa-cake"></i>
+            Attraction Layer Cake
+        </a>
+        <a href="https://spectrum.avris.it/6zwH" class="link-btn" target="_blank">
+            <i class="fab fa-spectrum"></i>
+            Gender and Sexuality Spectrum
+        </a>
+        <a href="https://gtaforums.com/profile/1101318-SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-gtaforums"></i>
+            GTAForums
+        </a>
+        <a href="https://www.geoguessr.com/user/5c2e7e73ff3dc9149c241749" class="link-btn" target="_blank">
+            <i class="fab fa-geoguessr"></i>
+            GeoGuessr
+        </a>
+        <a href="https://itaku.ee/profile/speedyfolf" class="link-btn" target="_blank">
+            <i class="fab fa-itaku"></i>
+            Itaku
+        </a>
+        <a href="https://www.pixiv.net/users/72522691" class="link-btn" target="_blank">
+            <i class="fab fa-pixiv"></i>
+            Pixiv
+        </a>
+        <a href="https://pastebin.com/u/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-pastebin"></i>
+            Pastebin
+        </a>
+        <a href="https://linktr.ee/SpeedyFolf" class="link-btn" target="_blank">
+            <i class="fab fa-linktree"></i>
+            Linktree
+        </a>
+        <!-- TEXT NOT LINKS -->
+        <button class="link-btn" onclick="alert('SpeedyFolf')">
+            <i class="fas fa-gamepad"></i>
+            Ubisoft Connect/Uplay<br>Origin/EA<br>PlayStation/Xbox
+        </button>
+        <button class="link-btn" onclick="alert('SpeedyFolf#1164')">
+            <i class="fab fa-riotgames"></i>
+            Riot Games
+        </button>
+        <button class="link-btn" onclick="alert('SpeedyFolf#1148')">
+            <i class="fab fa-battle-net"></i>
+            Battle.net
+        </button>
+        <button class="link-btn" onclick="alert('SpeedyFolf#4334')">
+            <i class="fab fa-fluxer"></i>
+            Fluxer
+        </button>
+        <button class="link-btn" onclick="alert('SpeedyFolf#2906')">
+            <i class="fab fa-stoat"></i>
+            Stoat (Revolt)
+        </button>
+        <a href="mailto:SpeedyFolf@Gmail.com" class="link-btn">
+            <i class="fas fa-envelope"></i>
+            Email
+        </a>
+    </div>
+    <footer>
+        <i class="fab fa-font-awesome"></i>
+        Icons by Font Awesome
+    </footer>
+</body>
 </html>
